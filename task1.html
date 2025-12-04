@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ім'я та Прізвище Студента">
+    <title>Веб-сайт: Хлібобулочні вироби (Всі частини в 1 файлі)</title>
+    
+    <style media="screen">
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .section-separator {
+            border: none;
+            height: 3px;
+            background-color: #333;
+            margin: 40px 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .centered {
+            text-align: center;
+        }
+        .new-price {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="centered">Веб-проект по производству хлебобулочных изделий</h1>
+
+        <p class="centered">
+            <a href="#author_section">Про автора</a> | 
+            <a href="#firm_info_section">Про фірму</a> | 
+            <a href="#news_section">Новини</a>
+        </p>
+        <hr color="#333" size="2" noshade>
+    </header>
+
+    
+    <div id="author_section" class="container">
+    
+        <h2 dir="ltr" class="centered" style="color: #0056b3;">1. Секція про автора проекту</h2>
+        
+        <h3 title="Коротка інформація" align="center" id="bio_title">Кілька слів про мене</h3>
+        
+        <p style="font-size: 1.1em;" dir="ltr" align="justify">
+            Я, <b><b title="Повне ім'я" id="author_name">Максим Романюк</b></b>, студент, який розробив цей веб-сайт. Моя мета — продемонструвати навички роботи з базовими тегами HTML та їх атрибутами. Я захоплююся веб-розробкою.
+        </p>
+        
+        <hr color="blue" size="1" noshade>
+
+        <h4 lang="uk" id="contact_title" class="centered">Мої інтереси</h4>
+
+        <p style="margin-top: 10px;" dir="ltr" align="left">
+            <i><i id="interest1" title="Кодування" lang="uk">Програмування</i></i>, <u><u title="Спорт" id="interest2">спорт</u></u>, читання.<br clear="all" style="margin-bottom: 5px;" title="Розрив">
+            Завжди радий новим викликам!
+        </p>
+    </div>
+    
+    <hr class="section-separator">
+
+    <div id="firm_info_section" class="container">
+    
+        <h1>2. Загальна інформація про фірму "Золотий Колос"</h1>
+        
+    
+        <img src="via.placeholder.com" usemap="#breadmap" style="border: 2px solid brown;" title="Зображення хліба" lang="uk" dir="ltr" alt="Зображення свіжого хліба">
+
+        <p>
+            Наша <strong><strong lang="uk" class="firm-style">фірма</strong></strong> спеціалізується на виробництві високоякісних хлібобулочних виробів. Ми використовуємо <em><em class="firm-style" lang="uk">натуральні інгредієнти</em></em>.
+        </p>
+
+        <address id="contact_address" title="Контактна інформація">
+            Адреса: вул. Пекарська, 10, м. Чернівці. <br>
+            Телефон: <kbd title="Номер телефону" id="phone_kbd"> +380 50 123 45 67</kbd>
+        </address>
+
+        <abbr dir="ltr" style="border-bottom: 1px dotted;" title="Товариство з обмеженою відповідальністю">ТОВ</abbr> "Золотий Колос" було засновано у 2005 році.
+
+        <blockquote>
+            <p style="font-style: italic;" dir="ltr" id="quote_block">"Якість, якість і ще раз якість — наш головний пріоритет!"</p>
+        </blockquote>
+
+        <h3>Наші переваги:</h3>
+        <pre class="firm-style" lang="uk">
+            - Широкий асортимент
+            - Свіжа продукція щодня
+            - Доступні ціни
+        </pre>
+    </div>
+
+    <hr class="section-separator">
+
+
+
+    <div id="news_section" class="container">
+    
+        
+        <h1>3. Новини фірми</h1>
+
+    
+        <section class="news-item" style="border: 1px solid #ddd;">
+            <h2>Новий асортимент продукції</h2>
+            <article id="article1" class="news-article">
+                <p>
+                    Ми раді повідомити, що з сьогоднішнього дня в нашому асортименті з'явився новий вид хліба — "Бородинський оригінальний".
+                </p>
+                <img class="news-img-style" alt="Новий хліб" ismap height="100" src="via.placeholder.com">
+                <p>
+                    <del class="old-price-style" lang="uk">Стара ціна: 40 грн</del> 
+                    <mark datetime="2025-12-01">Спеціальна ціна:</mark> 
+                    <span id="price_span" title="Нова ціна" class="new-price">35 грн</span>
+                </p>
+                <p>
+                    Вага продукту: 1 кг (10<sup><sup lang="uk" style="font-size: smaller;" class="sup-class">3</sup></sup> грамів).
+                </p>
+            </article>
+        </section>
+
+        <section class="news-item" style="border: 1px solid #ddd;">
+            <h2>Акція для пенсіонерів</h2>
+            <article id="article2" class="news-article">
+                <p>
+                    Знижка 5% на всю продукцію при наявності пенсійного посвідчення. 
+                
+                    <bdo dir="rtl">Тільки для наших найповажніших клієнтів!</bdo> 
+                </p>
+                
+                <aside id="sidebar_info">
+                    <p><i>Примітка: Акція діє до кінця місяця.</i></p>
+                </aside>
+
+                <h3>Цікавий факт про дріжджі (<ruby id="ruby_fact">дріжджі<rp>(</rp><rt>yeast</rt><rp>)</rp></ruby>):</h3>
+                <p>
+                    Хімічна формула води: H<sub><sub style="font-size: smaller;" lang="uk">2</sub></sub>O.
+                </p>
+            </article>
+        </section>
+    </div>
+
+
+    <map name="breadmap" onblur="">
+        <area style="cursor: pointer;" id="area1" coords="0,0,100,100" class="map-area-style" lang="uk" href="#" alt="Куток зображення">
+    </map>
+
+</body>
+</html>
