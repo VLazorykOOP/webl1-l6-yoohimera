@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ID селектори */
+#myh3 { color: #555; }
+#b1 { color: brown; }
+#q1 { padding: 10px; }
+#adr1 { font-style: normal; }
+#types { margin-top: 15px; }
+#p1 { margin-bottom: 20px; }
+#p2 { margin-bottom: 20px; }
+#h3n1 { color: #003366; }
+
+/* Сусіди */
+h2 + h3 {
+    color: #444;
+}
+
+/* Контекстний селектор */
+.section p {
+    line-height: 1.4;
+}
+
+/* Атрибутні селектори */
+[title] {
+    color: #222;
+}
+
+[class*=prod] {
+    font-weight: bold;
+}
+
+[lang$="uk"] {
+    letter-spacing: 0.3px;
+}
+
+/* Псевдокласи */
+p:first-child { color: #333; }
+
+input:disabled { background-color: #ccc; }
+input:invalid { border: 2px solid red; }
+
+*:lang(uk) { font-family: Arial; }
+
+div:empty { height: 10px; }
+
+p:not(.skip) { font-size: 16px; }
+
+input:focus { outline: 2px solid blue; }
+
+/* Псевдоелементи */
+p::first-line { font-weight: bold; }
+h2::after { content: " ▼"; }
+
+/* Блокові стилі */
+.section {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+.product {
+    background-color: #fff3cd;
+    padding: 10px;
+    border: 2px double #b8860b;
+}
+
+/* Позиціювання */
+.inline { display: inline; }
+.list { display: list-item; }
+.none { display: none; }
+.cell { display: table-cell; }
+.run { display: run-in; }
+
+.relative { position: relative; }
+.static { position: static; }
+
+.float-left { float: left; }
+.float-none { float: none; }
+
+.clear-both { clear: both; }
+
+/* Візуалізація */
+img {
+    width: 240px;
+    min-width: 100px;
+    min-height: 50px;
+    max-height: 300px;
+}
+
+/* Текст */
+.text { line-height: normal; }
+.bottom { vertical-align: text-bottom; }
+.top { vertical-align: text-top; }
+.percent { vertical-align: 20%; }
+
+/* Переповнення */
+.hidden { overflow: hidden; }
+.visible { overflow: visible; }
+
+.clip { clip: rect(0px, 50px, 50px, 0px); }
+
+/* Видимість */
+.show { visibility: visible; }
+.collapse { visibility: collapse; }
+
+/* Контури */
+.outline { outline: 2px solid red; }
+
+/* Фон */
+.bg-img {
+    background-image: url("bread.jpg");
+    background-attachment: scroll;
+    background-position: center;
+}
